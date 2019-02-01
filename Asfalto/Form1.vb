@@ -13,8 +13,9 @@ Public Class Form1
         '  PrintDocument1.Print()
 
         'prova stampa2
-
         ReportViewer1.PrintDialog()
+
+
 
 
     End Sub

@@ -316,6 +316,7 @@ Partial Class Form1
         '
         'ReportViewer1
         '
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Asfalto.Report1.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(590, 118)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(473, 159)
