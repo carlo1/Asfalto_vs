@@ -46,6 +46,7 @@ Partial Class Form1
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.C1DataViewSet1 = New C1.C1DataExtender.C1DataViewSet()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.Cantiere_41 = New Asfalto.Cantiere_4()
         Me.Calcolo_materiale1 = New Asfalto.calcolo_materiale()
         Me.Verifica_spessore1 = New Asfalto.verifica_spessore()
         Me.Lavori_corso1 = New Asfalto.lavori_corso()
@@ -302,7 +303,7 @@ Partial Class Form1
         Me.ButtonExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ButtonExit.Location = New System.Drawing.Point(1382, 16)
         Me.ButtonExit.Name = "ButtonExit"
-        Me.ButtonExit.Size = New System.Drawing.Size(41, 50)
+        Me.ButtonExit.Size = New System.Drawing.Size(41, 56)
         Me.ButtonExit.TabIndex = 0
         Me.ButtonExit.Text = "X"
         Me.ButtonExit.UseVisualStyleBackColor = True
@@ -323,23 +324,30 @@ Partial Class Form1
         Me.ReportViewer1.TabIndex = 9
         Me.ReportViewer1.Visible = False
         '
+        'Cantiere_41
+        '
+        Me.Cantiere_41.Location = New System.Drawing.Point(305, 287)
+        Me.Cantiere_41.Name = "Cantiere_41"
+        Me.Cantiere_41.Size = New System.Drawing.Size(722, 476)
+        Me.Cantiere_41.TabIndex = 10
+        '
         'Calcolo_materiale1
         '
-        Me.Calcolo_materiale1.Location = New System.Drawing.Point(279, 283)
+        Me.Calcolo_materiale1.Location = New System.Drawing.Point(329, 311)
         Me.Calcolo_materiale1.Name = "Calcolo_materiale1"
         Me.Calcolo_materiale1.Size = New System.Drawing.Size(861, 439)
         Me.Calcolo_materiale1.TabIndex = 5
         '
         'Verifica_spessore1
         '
-        Me.Verifica_spessore1.Location = New System.Drawing.Point(289, 253)
+        Me.Verifica_spessore1.Location = New System.Drawing.Point(339, 311)
         Me.Verifica_spessore1.Name = "Verifica_spessore1"
         Me.Verifica_spessore1.Size = New System.Drawing.Size(715, 522)
         Me.Verifica_spessore1.TabIndex = 6
         '
         'Lavori_corso1
         '
-        Me.Lavori_corso1.Location = New System.Drawing.Point(289, 253)
+        Me.Lavori_corso1.Location = New System.Drawing.Point(339, 311)
         Me.Lavori_corso1.Name = "Lavori_corso1"
         Me.Lavori_corso1.Size = New System.Drawing.Size(738, 522)
         Me.Lavori_corso1.TabIndex = 7
@@ -363,6 +371,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Calcolo_materiale1)
         Me.Controls.Add(Me.Verifica_spessore1)
         Me.Controls.Add(Me.Lavori_corso1)
+        Me.Controls.Add(Me.Cantiere_41)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
@@ -405,4 +414,5 @@ Partial Class Form1
     Friend WithEvents PrintDocument1 As Drawing.Printing.PrintDocument
     Friend WithEvents C1DataViewSet1 As C1.C1DataExtender.C1DataViewSet
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents Cantiere_41 As Cantiere_4
 End Class

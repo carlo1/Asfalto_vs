@@ -68,6 +68,8 @@
     <Reference Include="C1.Win.C1Input.2, Version=2.0.20151.38, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
     <Reference Include="C1.Win.C1ReportDesigner.2, Version=2.0.20151.38, Culture=neutral, PublicKeyToken=fb528571dbff5bd2, processorArchitecture=MSIL" />
     <Reference Include="C1.Win.C1ReportDesigner.4, Version=4.0.20151.38, Culture=neutral, PublicKeyToken=fb528571dbff5bd2, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Schedule.2, Version=2.0.20151.38, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1SuperTooltip.2, Version=2.0.20151.38, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="PresentationCore" />
@@ -78,6 +80,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
@@ -103,10 +106,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="calcolo_materiale.Designer.vb">
-      <DependentUpon>calcolo_materiale.vb</DependentUpon>
+    <Compile Include="1_calcolo_materiale.Designer.vb">
+      <DependentUpon>1_calcolo_materiale.vb</DependentUpon>
     </Compile>
-    <Compile Include="calcolo_materiale.vb">
+    <Compile Include="1_calcolo_materiale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4_Cantiere.Designer.vb">
+      <DependentUpon>4_Cantiere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4_Cantiere.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -116,10 +125,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="lavori_corso.Designer.vb">
-      <DependentUpon>lavori_corso.vb</DependentUpon>
+    <Compile Include="3_lavori_corso.Designer.vb">
+      <DependentUpon>3_lavori_corso.vb</DependentUpon>
     </Compile>
-    <Compile Include="lavori_corso.vb">
+    <Compile Include="3_lavori_corso.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -137,22 +146,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="verifica_spessore.Designer.vb">
-      <DependentUpon>verifica_spessore.vb</DependentUpon>
+    <Compile Include="2_verifica_spessore.Designer.vb">
+      <DependentUpon>2_verifica_spessore.vb</DependentUpon>
     </Compile>
-    <Compile Include="verifica_spessore.vb">
+    <Compile Include="2_verifica_spessore.vb">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="calcolo_materiale.resx">
-      <DependentUpon>calcolo_materiale.vb</DependentUpon>
+    <EmbeddedResource Include="1_calcolo_materiale.resx">
+      <DependentUpon>1_calcolo_materiale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4_Cantiere.resx">
+      <DependentUpon>4_Cantiere.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="lavori_corso.resx">
-      <DependentUpon>lavori_corso.vb</DependentUpon>
+    <EmbeddedResource Include="3_lavori_corso.resx">
+      <DependentUpon>3_lavori_corso.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -162,8 +174,8 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="verifica_spessore.resx">
-      <DependentUpon>verifica_spessore.vb</DependentUpon>
+    <EmbeddedResource Include="2_verifica_spessore.resx">
+      <DependentUpon>2_verifica_spessore.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

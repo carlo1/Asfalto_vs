@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class lavori_corso
+Partial Class verifica_spessore
     Inherits System.Windows.Forms.UserControl
 
     'UserControl esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
@@ -29,19 +29,19 @@ Partial Class lavori_corso
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(69, 55)
+        Me.Label1.Location = New System.Drawing.Point(69, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(223, 36)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Lavori in Corso"
+        Me.Label1.Size = New System.Drawing.Size(280, 36)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "2 Verifica Spessore"
         '
-        'lavori_corso
+        'verifica_spessore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Label1)
-        Me.Name = "lavori_corso"
-        Me.Size = New System.Drawing.Size(808, 550)
+        Me.Name = "verifica_spessore"
+        Me.Size = New System.Drawing.Size(846, 499)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
